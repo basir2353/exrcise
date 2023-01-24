@@ -8,23 +8,64 @@
 </head>
 <body>
     <style>
-#next{
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #214510;
+}
+header{
+    height: 4   0px;;
+}
+
+ol{
     display: flex;
-    position: absolute;
-    margin-left: 20px;
+    list-style-type: none;
+    color: white;
+    line-height: 40px;
+}
+li:first-child{
+    flex-grow: 4;
+}
+
+li:not(:first-child){
+    text-align: center;
+    cursor: pointer;
+}
+button{
+    text-align: center;
+    cursor: pointer;
+    background-color: #5e85c8;
+    padding: 10px 15px;
+    border-radius: 50%;
+
+}
+li{
+    flex-grow: 0.6;
+    
+}
+li:not(:first-child):hover{
+    background-color: #5e85c8;
+}
+#container {
+    width:80vw;
+    margin: auto;
 }
     </style>
-    <div>
+    <div id="container">
         <header>
-            <nav id="next">
-             
-                   <li class="some">BASIT</li>
+            <nav >
+             <ol id="next">
+                
+                <li class="some"><h1>BASIT</h1></li>
                 <li class="some">HOME</li>
                 <li class="some">ABOUT</li>
                 <li class="some">BLOG</li>
                 <li class="some">SINGUP</li>
              
-
+<button>Data</button>
+             </ol>
             </nav>
         </header>
     </div>
