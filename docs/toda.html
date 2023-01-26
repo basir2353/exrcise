@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #37517e;
+}
+header{
+    height: 4   0px;;
+}
+
+ol{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    line-height: 40px;
+}
+li:first-child{
+    flex-grow: 4;
+}
+
+li:not(:first-child){
+    text-align: center;
+    cursor: pointer;
+}
+
+li{
+    flex-grow: 0.6;
+    
+}
+li:not(:first-child):hover{
+    background-color: #5e85c8;
+}
+#container {
+    width:80vw;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+    <header>
+    <nav>
+        <ol>
+            <li><h1>Abdul Basit</h1></li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>PORTFOLIO</li>
+            <li>TEAM</li>
+        </ol>
+    </nav>
+</header>
+</div>
+</body>
+</html>
